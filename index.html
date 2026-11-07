@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil Kumar Kadavakollu | Quality & Design Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for Opportunities
+            </div>
+            <h1 class="hero-name">
+                <span class="greeting">Hello, I'm</span>
+                <span class="name-line">Anil Kumar</span>
+                <span class="name-line accent">Kadavakollu</span>
+            </h1>
+            <div class="hero-typewriter">
+                <span class="typewriter-prefix">I'm a </span>
+                <span class="typewriter-text" id="typewriter"></span>
+                <span class="typewriter-cursor">|</span>
+            </div>
+            <p class="hero-desc">
+                Mechanical Engineering Graduate (B.Tech 2025) with hands-on Quality Engineering experience. 
+                Passionate about ensuring product excellence through rigorous inspection, testing, and continuous improvement.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Get In Touch</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#experience" class="btn btn-secondary">
+                    <span>View My Work</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Months Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Internships</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Software Tools</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <div class="card-header">
+                    <div class="card-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="card-title">profile.json</span>
+                </div>
+                <pre class="card-code"><code>{
+  <span class="code-key">"name"</span>: <span class="code-string">"Anil Kumar K"</span>,
+  <span class="code-key">"role"</span>: <span class="code-string">"Quality Engineer"</span>,
+  <span class="code-key">"education"</span>: <span class="code-string">"B.Tech Mechanical"</span>,
+  <span class="code-key">"experience"</span>: <span class="code-string">"Orient Electrical"</span>,
+  <span class="code-key">"skills"</span>: [
+    <span class="code-string">"Quality Inspection"</span>,
+    <span class="code-string">"GD&T"</span>,
+    <span class="code-string">"CATIA V5"</span>,
+    <span class="code-string">"CAPA"</span>,
+    <span class="code-string">"ANSYS"</span>
+  ],
+  <span class="code-key">"status"</span>: <span class="code-value">"open_to_work"</span>
+}</code></pre>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01. About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a <strong>Mechanical Engineering graduate</strong> from Prasad V Potluri Siddhartha Institute of Technology, Vijayawada, 
+                        with a passion for <strong>quality engineering</strong> and <strong>product design</strong>.
+                    </p>
+                    <p>
+                        During my time at <strong>Orient Electrical Ltd, Hyderabad</strong>, I gained hands-on experience in quality audits, 
+                        inspection of electrical components, defect documentation, and CAPA implementation. This experience solidified my 
+                        commitment to maintaining the highest standards of product quality.
+                    </p>
+                    <p>
+                        My technical foundation includes proficiency in measuring instruments (Vernier Caliper, Micrometer, Height Gauge), 
+                        engineering drawing interpretation with GD&T, and CAD software including CATIA V5, AutoCAD, and Inventor. 
+                        I'm detail-oriented, team-focused, and ready to contribute to quality-driven manufacturing environments.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Vuyyuru, Krishna, AP</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🎓</span>
+                            <div>
+                                <span class="info-label">Degree</span>
+                                <span class="info-value">B.Tech Mechanical (2025)</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🏢</span>
+                            <div>
+                                <span class="info-label">Experience</span>
+                                <span class="info-value">Orient Electrical Ltd</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">✅</span>
+                            <div>
+                                <span class="info-label">Status</span>
+                                <span class="info-value">Open to Work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <div class="placeholder-icon">AK</div>
+                            <p>Anil Kumar Kadavakollu</p>
+                            <span>Quality & Design Engineer</span>
+                        </div>
+                    </div>
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02. Skills</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Quality & Inspection -->
+                <div class="skill-card" data-category="quality">
+                    <div class="skill-card-icon">🔍</div>
+                    <h3>Inspection & Testing</h3>
+                    <ul class="skill-list">
+                        <li>Incoming Material Inspection</li>
+                        <li>In-Process & Final Inspection</li>
+                        <li>Dimensional & Visual Verification</li>
+                        <li>Hardness & Wear Testing</li>
+                        <li>Thermal Conductivity Testing</li>
+                        <li>Non-Conformance Reporting</li>
+                    </ul>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 85%"></div>
+                    </div>
+                </div>
+
+                <!-- Measuring Instruments -->
+                <div class="skill-card" data-category="instruments">
+                    <div class="skill-card-icon">📏</div>
+                    <h3>Measuring Instruments</h3>
+                    <ul class="skill-list">
+                        <li>Vernier Caliper</li>
+                        <li>Micrometer</li>
+                        <li>Height Gauge</li>
+                        <li>Dial Gauge</li>
+                        <li>Standard Inspection Tools</li>
+                    </ul>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 80%"></div>
+                    </div>
+                </div>
+
+                <!-- Drawings & Standards -->
+                <div class="skill-card" data-category="drawings">
+                    <div class="skill-card-icon">📐</div>
+                    <h3>Drawings & Standards</h3>
+                    <ul class="skill-list">
+                        <li>Engineering Drawing Reading</li>
+                        <li>GD&T & Tolerancing</li>
+                        <li>CATIA V5 2D Drawings</li>
+                        <li>Blueprint Interpretation</li>
+                    </ul>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 82%"></div>
+                    </div>
+                </div>
+
+                <!-- Quality Systems -->
+                <div class="skill-card" data-category="quality-systems">
+                    <div class="skill-card-icon">📋</div>
+                    <h3>Quality Systems</h3>
+                    <ul class="skill-list">
+                        <li>QMS Documentation</li>
+                        <li>CAPA (Corrective & Preventive)</li>
+                        <li>Inspection Reports</li>
+                        <li>NCR (Non-Conformance Reports)</li>
+                        <li>Traceability Records</li>
+                        <li>Lean / 5S Methodology</li>
+                    </ul>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 78%"></div>
+                    </div>
+                </div>
+
+                <!-- CAD & Software -->
+                <div class="skill-card" data-category="software">
+                    <div class="skill-card-icon">💻</div>
+                    <h3>CAD & Software</h3>
+                    <ul class="skill-list">
+                        <li>CATIA V5</li>
+                        <li>Autodesk Inventor</li>
+                        <li>AutoCAD</li>
+                        <li>ANSYS</li>
+                        <li>MS Office (Word, Excel, PPT)</li>
+                        <li>Python & C Programming</li>
+                    </ul>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 75%"></div>
+                    </div>
+                </div>
+
+                <!-- Manufacturing -->
+                <div class="skill-card" data-category="manufacturing">
+                    <div class="skill-card-icon">⚙️</div>
+                    <h3>Materials & Manufacturing</h3>
+                    <ul class="skill-list">
+                        <li>Materials Science & Alloy Selection</li>
+                        <li>Casting & Machining</li>
+                        <li>Metal Forming & Assembly</li>
+                        <li>Gears, Shafts, Bearings</li>
+                        <li>Power Transmission Systems</li>
+                    </ul>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 77%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03. Experience</span>
+                <h2 class="section-title">Professional Journey</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- Orient Electrical -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Quality Engineering</div>
+                        <h3>Quality Engineer (Contract)</h3>
+                        <h4>Orient Electrical Ltd, Hyderabad</h4>
+                        <span class="timeline-date">3 Months</span>
+                        <ul class="timeline-details">
+                            <li>Conducted quality audits and inspections on electrical components, ensuring compliance with manufacturing standards</li>
+                            <li>Documented quality defects and prepared inspection reports; recommended corrective and preventive actions (CAPA)</li>
+                            <li>Collaborated with production and engineering teams to maintain product quality and reduce defect rates</li>
+                            <li>Gained hands-on experience in quality control methodologies and manufacturing QMS</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Quality Audits</span>
+                            <span>CAPA</span>
+                            <span>Inspection Reports</span>
+                            <span>QMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- APGENCO -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge intern">Power Generation</div>
+                        <h3>Power Generation Intern</h3>
+                        <h4>APGENCO</h4>
+                        <span class="timeline-date">2 Months</span>
+                        <ul class="timeline-details">
+                            <li>Studied thermal power systems, boiler/turbine mechanics, equipment reliability and preventive maintenance practices</li>
+                            <li>Exposed to 5S/Lean principles, equipment inspection, shop-floor safety standards and maintenance documentation</li>
+                            <li>Prepared maintenance logs and operational reports; understood condition-based maintenance strategies</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Thermal Systems</span>
+                            <span>5S/Lean</span>
+                            <span>Preventive Maintenance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ISHRAE -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge intern">HVAC&R Systems</div>
+                        <h3>HVAC&R Systems Intern</h3>
+                        <h4>ISHRAE</h4>
+                        <span class="timeline-date">1 Month</span>
+                        <ul class="timeline-details">
+                            <li>Learned HVAC design fundamentals, thermodynamic principles, load calculations and component sizing</li>
+                            <li>Understood energy-efficiency concepts and thermal management systems</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>HVAC Design</span>
+                            <span>Thermodynamics</span>
+                            <span>Energy Efficiency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04. Projects</span>
+                <h2 class="section-title">Major Project</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-showcase">
+                <div class="project-card featured">
+                    <div class="project-card-header">
+                        <div class="project-icon">🔬</div>
+                        <div class="project-links">
+                            <span class="project-type">B.Tech Final Year Project</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Development and Characterisation of Aluminium-Rich Multi-Principal Element Alloy (MPEA)</h3>
+                    <p class="project-description">
+                        Designed and fabricated a novel MPEA composition (80% Al, 5% Cr, 5% Co, 5% Ni, 5% Fe) targeting 
+                        high strength-to-weight ratio and superior wear resistance for advanced engineering applications.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight">
+                            <span class="highlight-icon">🧪</span>
+                            <div>
+                                <strong>Composition Design</strong>
+                                <p>80% Al, 5% Cr, 5% Co, 5% Ni, 5% Fe — optimized for strength-to-weight ratio</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">🏭</span>
+                            <div>
+                                <strong>Fabrication</strong>
+                                <p>Specimens fabricated by vacuum induction casting</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">📊</span>
+                            <div>
+                                <strong>Testing & Analysis</strong>
+                                <p>Hardness, wear, thermal-conductivity testing + optical microscopy</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">📝</span>
+                            <div>
+                                <strong>Documentation</strong>
+                                <p>Structured technical reports comparing results with conventional Al alloys</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Vacuum Induction Casting</span>
+                        <span>Hardness Testing</span>
+                        <span>Wear Testing</span>
+                        <span>Thermal Conductivity</span>
+                        <span>Optical Microscopy</span>
+                        <span>MS Excel</span>
+                        <span>MS Word</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05. Education</span>
+                <h2 class="section-title">Academic Background</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-year">2025</div>
+                    <div class="edu-content">
+                        <h3>B.Tech Mechanical Engineering</h3>
+                        <h4>Prasad V Potluri Siddhartha Institute of Technology, Vijayawada</h4>
+                        <div class="edu-score">
+                            <span class="score-label">CGPA</span>
+                            <span class="score-value">7.08</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2021</div>
+                    <div class="edu-content">
+                        <h3>Intermediate (MPC)</h3>
+                        <h4>Sri Chaitanya Junior College, Vuyyuru</h4>
+                        <div class="edu-score">
+                            <span class="score-label">Marks</span>
+                            <span class="score-value">670</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2019</div>
+                    <div class="edu-content">
+                        <h3>SSC (10th Standard)</h3>
+                        <h4>Sri Srinivasa Aksharalayam EM School, Vuyyuru</h4>
+                        <div class="edu-score">
+                            <span class="score-label">CGPA</span>
+                            <span class="score-value">7.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications">
+                <h3 class="cert-title">📜 Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">🐍</div>
+                        <div>
+                            <h4>Python Machine Learning</h4>
+                            <span>Infosys Springboard</span>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🗣️</div>
+                        <div>
+                            <h4>Communication Skills Training</h4>
+                            <span>Infosys Springboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">06. Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        I'm actively seeking <strong>Quality Engineer</strong> and <strong>Design Engineer</strong> opportunities. 
+                        Feel free to reach out — I'd love to hear about roles that match my skills!
+                    </p>
+                    <div class="contact-cards">
+                        <a href="tel:+919014805313" class="contact-card">
+                            <div class="contact-card-icon">📞</div>
+                            <div>
+                                <span class="contact-card-label">Phone</span>
+                                <span class="contact-card-value">+91 9014805313</span>
+                            </div>
+                        </a>
+                        <a href="mailto:kkanilkumar95@gmail.com" class="contact-card">
+                            <div class="contact-card-icon">✉️</div>
+                            <div>
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">kkanilkumar95@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/anilkumar-kadavakollu" target="_blank" class="contact-card">
+                            <div class="contact-card-icon">💼</div>
+                            <div>
+                                <span class="contact-card-label">LinkedIn</span>
+                                <span class="contact-card-value">anilkumar-kadavakollu</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/AnilKadavakollu95" target="_blank" class="contact-card">
+                            <div class="contact-card-icon">🐙</div>
+                            <div>
+                                <span class="contact-card-label">GitHub</span>
+                                <span class="contact-card-value">AnilKadavakollu95</span>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">📍</div>
+                            <div>
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">Vuyyuru, Krishna, Andhra Pradesh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built by Anil Kumar Kadavakollu</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/anilkumar-kadavakollu" target="_blank" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://github.com/AnilKadavakollu95" target="_blank" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="mailto:kkanilkumar95@gmail.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </div>
+                <p class="footer-copy">&copy; 2025 Anil Kumar Kadavakollu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
